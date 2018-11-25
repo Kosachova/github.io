@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link href="https://fonts.googleapis.com/css?family=Oswald&amp;subset=cyrillic" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>pagination</title>
+        
+        <style>
+            .pagination{
+                margin:20px auto 0px;                
+            }
+            .pagination ul{
+                text-align: center;
+                                                                        
+            }
+           .pagination ul li {
+               display: inline-block;
+               margin: 2px;                       
+               background-color: #3F3F3F;
+               height: 20px;
+               line-height: 20px;
+               font-family: 'Oswald', sans-serif;
+               font-weight: 400; 
+               padding: 4px;
+            }
+           .pagination ul li:nth-child(n+2):nth-child(-n+7){
+               width: 20px;
+                
+            }
+
+           .pagination ul li:hover{
+               background-color: #FF6600
+           }
+           .pagination ul li a {
+               color: white;
+               text-decoration:none;
+                                        
+             }
+
+              
+        </style>
+    
+</head>
+<body>
+    
+      
+       <div class="pagination" >
+              <ul>
+              <li><a href="#">&lt Предыдущая</a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">Следующая &gt</a></li>
+            </ul>
+     </div>
+        
+</body>
+</html>
