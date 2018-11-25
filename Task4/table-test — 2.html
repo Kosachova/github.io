@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+   
+</head>
+<body >
+<style>
+       
+        .table_border{
+                border-collapse: collapse
+        }
+        .table_cell_headline{
+                background-color:#888888;
+                color:#ffffff;
+                text-align: center; 
+                padding: 5px; 
+                border:solid blue 2px;
+                border-right:none;
+                border-left:none
+           
+        }
+        .table_cell_headline_first{
+                background-color:#888888;
+                color:#ffffff;
+                text-align: center;
+                padding: 5px; 
+                border:solid blue 2px;
+                border-right:none 
+                  
+        }
+        .table_cell_headline_last{
+                background-color:#888888;
+                color:#ffffff;
+                text-align: center;
+                padding: 5px; 
+                border:solid blue 2px;
+                border-left:none
+        }
+        tr td{
+                vertical-align:middle;
+                text-align: center;
+                padding: 5px; 
+                border:solid blue 2px
+        }
+        .cell_text-align_right{
+                text-align: right
+        }
+        .cell_text-align_left{
+                text-align: left
+        }
+        .cell_text-align_right{
+                text-align: right
+        }
+        .table2{
+                margin: 50px auto 0
+         }
+        .table2_red_cell{
+                width: 7px;
+                height: 7px;
+                background-color: red;
+                border:0px
+        }
+        .table2_white_cell{
+                width: 5px;
+                height: 5px;
+                background-color: white;
+                border:0px
+        }
+        .table2_green_cell{
+                width: 7px;
+                height: 7px;
+                background-color:#a9e015;
+                border:0px
+        }
+
+        .table3{
+                margin: 5px auto 0
+         }
+        .table3_magenta1_cell{
+                width: 5px;
+                height: 5px;
+                background-color:#da249d;
+                border:0px
+        }
+        .table3_magenta2_cell{
+                width: 5px;
+                height: 5px;
+                background-color:#e268d0;
+                border:0px
+        }
+        .table3_magenta3_cell{
+                width: 5px;
+                height: 5px;
+                background-color:#ec5a97;
+                border:0px
+        }
+        .table3_magenta4_cell{
+                width: 5px;
+                height: 5px;
+                background-color:#f896e9;
+                border:0px
+        }
+        .table3_green1_cell{
+                width: 5px;
+                height: 5px;
+                background-color:#117221;
+                border:0px
+        }
+        .table3_green2_cell{
+                width: 5px;
+                height: 5px;
+                background-color:#4db16b;
+                border:0px
+        }
+        .table3_green3_cell{
+                width: 5px;
+                height: 5px;
+                background-color:#1ac244;
+                border:0px
+        }
+        .table3_green4_cell{
+                width: 5px;
+                height: 5px;
+                background-color:#2bec3b;
+                border:0px
+        }
+        .table3_nocell{
+                width: 5px;
+                height: 5px;
+                opacity: 0.0
+        }
+        .noborder{
+                border: 0px;
+                } 
+        .table4{
+                margin: 5px auto 0
+         }
+        .table4_black_cell{
+                width: 7px;
+                height: 7px;
+                background-color:#000000;
+                border:0px
+        }
+        .table4_green1_cell{
+                width: 7px;
+                height: 7px;
+                background-color:#217d08;
+                border:0px
+        }
+        .table4_green2_cell{
+                width: 7px;
+                height: 7px;
+                background-color:#66b57b;
+                border:0px
+        }
+        .table4_green3_cell{
+                width: 7px;
+                height: 7px;
+                background-color:#659973;
+                border:0px
+        }
+        .table4_green4_cell{
+                width: 7px;
+                height: 7px;
+                background-color:#08c639;
+                border:0px
+        }
+        .table4_brown_cell{
+                width: 7px;
+                height: 7px;
+                background-color:#855904;
+                border:0px
+        }
+        .table4_orange_cell{
+                width: 7px;
+                height: 7px;
+                background-color:#f48004;
+                border:0px
+        }
+        .table4_nocell{
+                width: 7px;
+                height: 7px;
+                opacity: 0.0
+        }
+
+</style>
+
+    <h1>Пример сложной таблицы</h1>
+  <table class='table_border'; width="100%">
+    <tr> 
+       <th class='table_cell_headline_first'> Название 1 </th>
+       <th class='table_cell_headline'> Название 2 </th>
+       <th class='table_cell_headline'> Ещё название </th>
+       <th class='table_cell_headline'>Куча элементов </th>
+       <th class='table_cell_headline'> Список 1</th>
+       <th class='table_cell_headline_last'> Список 2 </th>
+    </tr> 
+    <tr>
+        <td rowspan="11">JPMC</td>
+        <td rowspan="5"; class='cell_text-align_left'>CST</td>
+        <td rowspan="3"; class='cell_text-align_left'>CT</td>
+        <td class='cell_text-align_left'>ADS</td>
+        <td >1</td>
+        <td >10</td>
+    </tr>
+    <tr>
+        <td class='cell_text-align_left'>BTO</td>
+        <td >2</td>
+        <td>15</td>
+    </tr>
+    <tr>
+            <td class='cell_text-align_left'>CSI</td>
+            <td>3</td>
+            <td>6</td>
+    </tr>
+    <tr>
+            <td rowspan="2">VCT</td>
+            <td class='cell_text-align_left'>ADS</td>
+            <td>4</td>
+            <td>10</td>
+           
+    </tr>
+    <tr>
+            <td class='cell_text-align_left'>BTO</td>
+            <td>5</td>
+            <td>15</td>
+    </tr>
+    <tr>
+            <td colspan="3"; class='cell_text-align_right'>Sub Total</td>
+            <td>6</td>
+            <td>15</td>
+    </tr>
+    <tr>
+            <td rowspan="4"; class='cell_text-align_left'>CST</td>
+            <td rowspan="3"; class='cell_text-align_left'>CT</td>
+            <td class='cell_text-align_left'>ADS</td>
+            <td>7</td>
+            <td>10</td>
+    </tr>
+    <tr>
+            <td class='cell_text-align_left'>BTO</td>
+            <td>8</td>
+            <td>15</td>
+    </tr>
+    <tr>
+            <td class='cell_text-align_left'>CSI</td>
+            <td>9</td>
+            <td>6</td>
+    </tr>
+    <tr>
+            <td>VCT</td>
+            <td class='cell_text-align_left'>ADS</td>
+            <td>10</td>
+            <td>10</td>
+    </tr>
+    <tr>
+            <td colspan="3"; class='cell_text-align_right'>Sub Total</td>
+            <td>11</td>
+            <td>15</td>
+    </tr>
+   
+</table>
+
+<table cellspacing="0" class="table2" >
+        <tr>
+                <td class='table2_red_cell'></td>
+                <td class='table2_white_cell'></td>
+                <td class='table2_red_cell'></td>
+                <td class='table2_green_cell'></td>
+                <td class='table2_red_cell'></td>
+                <td class='table2_white_cell'></td>
+                <td class='table2_red_cell'></td>
+        </tr>
+        <tr>
+                <td class='table2_white_cell'></td>
+                <td class='table2_red_cell'></td>
+                <td class='table2_green_cell'></td>
+                <td class='table2_white_cell'></td>
+                <td class='table2_green_cell'></td>
+                <td class='table2_red_cell'></td>
+                <td class='table2_white_cell'></td>
+        </tr>
+        <tr>
+               <td class='table2_red_cell'></td>
+                <td class='table2_green_cell'></td>
+                <td class='table2_white_cell'></td>
+                <td class='table2_white_cell'></td>
+                <td class='table2_white_cell'></td>
+                <td class='table2_green_cell'></td>
+                <td class='table2_red_cell'></td>
+        </tr>
+        <tr>
+                <td class='table2_green_cell'></td>
+                <td class='table2_white_cell'></td>
+                <td class='table2_white_cell'></td>
+                <td class='table2_red_cell'></td>
+                <td class='table2_white_cell'></td>
+                <td class='table2_white_cell'></td>
+                <td class='table2_green_cell'></td>
+       </tr>
+       <tr>
+                <td class='table2_red_cell'></td>
+                 <td class='table2_green_cell'></td>
+                 <td class='table2_white_cell'></td>
+                 <td class='table2_white_cell'></td>
+                 <td class='table2_white_cell'></td>
+                 <td class='table2_green_cell'></td>
+                 <td class='table2_red_cell'></td>
+         </tr>
+         <tr>
+                <td class='table2_white_cell'></td>
+                <td class='table2_red_cell'></td>
+                <td class='table2_green_cell'></td>
+                <td class='table2_white_cell'></td>
+                <td class='table2_green_cell'></td>
+                <td class='table2_red_cell'></td>
+                <td class='table2_white_cell'></td>
+        </tr>
+        <tr>
+                <td class='table2_red_cell'></td>
+                <td class='table2_white_cell'></td>
+                <td class='table2_red_cell'></td>
+                <td class='table2_green_cell'></td>
+                <td class='table2_red_cell'></td>
+                <td class='table2_white_cell'></td>
+                <td class='table2_red_cell'></td>
+        </tr>
+</table>
+<table cellspacing="0" class="table3">
+        <tr>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_magenta1_cell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+
+                        <td class='table3_nocell noborder'></td>
+
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_green1_cell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+
+                        <td class='table3_nocell noborder'></td>
+
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_magenta1_cell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                
+        </tr>
+        <tr>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_magenta1_cell noborder'></td>
+                        <td class='table3_magenta2_cell noborder'></td>
+                        <td class='table3_magenta1_cell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+
+                        <td class='table3_nocell noborder'></td>
+
+                        
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_green1_cell noborder'></td>
+                        <td class='table3_green2_cell noborder'></td>
+                        <td class='table3_green1_cell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+
+                        <td class='table3_nocell noborder'></td>
+
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_magenta1_cell noborder'></td>
+                        <td class='table3_magenta2_cell noborder'></td>
+                        <td class='table3_magenta1_cell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                     
+        </tr>
+        <tr>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_magenta1_cell noborder'></td>
+                        <td class='table3_magenta2_cell noborder'></td>
+                        <td class='table3_magenta3_cell noborder'></td>
+                        <td class='table3_magenta2_cell noborder'></td>
+                        <td class='table3_magenta1_cell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+
+                        <td class='table3_nocell noborder'></td>
+
+                        
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_green1_cell noborder'></td>
+                        <td class='table3_green2_cell noborder'></td>
+                        <td class='table3_green3_cell noborder'></td>
+                        <td class='table3_green2_cell noborder'></td>
+                        <td class='table3_green1_cell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+
+                        <td class='table3_nocell noborder'></td>
+
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_magenta1_cell noborder'></td>
+                        <td class='table3_magenta2_cell noborder'></td>
+                        <td class='table3_magenta3_cell noborder'></td>
+                        <td class='table3_magenta2_cell noborder'></td>
+                        <td class='table3_magenta1_cell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+
+        </tr>
+       
+                
+        <tr>
+                <td class='table3_magenta1_cell noborder'></td>
+                <td class='table3_magenta2_cell noborder'></td>
+                <td class='table3_magenta3_cell noborder'></td>
+                <td class='table3_magenta4_cell noborder'></td>
+                <td class='table3_magenta3_cell noborder'></td>
+                <td class='table3_magenta2_cell noborder'></td>
+                <td class='table3_magenta1_cell noborder'></td>
+
+                <td class='table3_nocell noborder'></td>
+
+                <td class='table3_green1_cell noborder'></td>
+                <td class='table3_green2_cell noborder'></td>
+                <td class='table3_green3_cell noborder'></td>
+                <td class='table3_green4_cell noborder'></td>
+                <td class='table3_green3_cell noborder'></td>
+                <td class='table3_green2_cell noborder'></td>
+                <td class='table3_green1_cell noborder'></td>
+
+                <td class='table3_nocell noborder'></td>
+
+                <td class='table3_magenta1_cell noborder'></td>
+                <td class='table3_magenta2_cell noborder'></td>
+                <td class='table3_magenta3_cell noborder'></td>
+                <td class='table3_magenta4_cell noborder'></td>
+                <td class='table3_magenta3_cell noborder'></td>
+                <td class='table3_magenta2_cell noborder'></td>
+                <td class='table3_magenta1_cell noborder'></td>
+                   
+        </tr>   
+        <tr>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_magenta1_cell noborder'></td>
+                        <td class='table3_magenta2_cell noborder'></td>
+                        <td class='table3_magenta3_cell noborder'></td>
+                        <td class='table3_magenta2_cell noborder'></td>
+                        <td class='table3_magenta1_cell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+
+                        <td class='table3_nocell noborder'></td>
+
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_green1_cell noborder'></td>
+                        <td class='table3_green2_cell noborder'></td>
+                        <td class='table3_green3_cell noborder'></td>
+                        <td class='table3_green2_cell noborder'></td>
+                        <td class='table3_green1_cell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+
+                        
+                        <td class='table3_nocell noborder'></td>
+
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_magenta1_cell noborder'></td>
+                        <td class='table3_magenta2_cell noborder'></td>
+                        <td class='table3_magenta3_cell noborder'></td>
+                        <td class='table3_magenta2_cell noborder'></td>
+                        <td class='table3_magenta1_cell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+
+
+
+        </tr>
+        <tr>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_magenta1_cell noborder'></td>
+                        <td class='table3_magenta2_cell noborder'></td>
+                        <td class='table3_magenta1_cell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+
+                        <td class='table3_nocell noborder'></td>
+
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_green1_cell noborder'></td>
+                        <td class='table3_green2_cell noborder'></td>
+                        <td class='table3_green1_cell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+
+                        <td class='table3_nocell noborder'></td>
+
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_magenta1_cell noborder'></td>
+                        <td class='table3_magenta2_cell noborder'></td>
+                        <td class='table3_magenta1_cell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                      
+        </tr>
+        <tr>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_magenta1_cell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+
+                        <td class='table3_nocell noborder'></td>
+
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_green1_cell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+
+                        
+                        <td class='table3_nocell noborder'></td>
+
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_magenta1_cell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+                        <td class='table3_nocell noborder'></td>
+
+                
+        </tr>
+        <table  class="table4 table_border" cellspasing="0">
+                <tr>
+                        <td  class="table4_black_cell noborder" rowspan="11"></td>
+                        <td  class="table4_black_cell noborder" rowspan="7" ></td>
+                        <td  class="table4_black_cell noborder" rowspan="3"></td>
+                        <td  class="table4_black_cell noborder" rowspan="2" ></td>
+                        <td  class="table4_black_cell noborder" ></td>
+                        <td  class="table4_green1_cell noborder"  ></td>
+                        <td  class="table4_black_cell noborder" ></td>
+                        <td  class="table4_black_cell noborder" rowspan="2" ></td>
+                        <td  class="table4_black_cell noborder" rowspan="3"></td>
+                        <td  class="table4_black_cell noborder" rowspan="7"></td>
+                        <td  class="table4_black_cell noborder" rowspan="11"></td>
+
+                </tr>
+                <tr>
+                        <td class="table4_green2_cell noborder"  colspan="3"></td>
+                                                           
+                </tr>
+                <tr>
+                        <td class="table4_green3_cell noborder"  colspan="5"></td>
+                </tr>
+                <tr>
+                         <td class="table4_green4_cell noborder"  colspan="7"></td>
+                </tr>
+                <tr>
+                        <td class="table4_black_cell noborder" rowspan="2" ></td>
+                        <td class="table4_black_cell noborder"></td>
+                        <td class="table4_green1_cell noborder"  colspan="3"></td>
+                        <td class="table4_black_cell noborder"></td>
+                        <td class="table4_black_cell noborder" rowspan="2" ></td>
+                </tr>
+                <tr>
+                        <td class="table4_green2_cell noborder"  colspan="5"></td>
+                </tr>
+                <tr>
+                        <td class="table4_green3_cell noborder"  colspan="7"></td>
+                </tr>
+                <tr>
+                        <td class="table4_green4_cell noborder"  colspan="9"></td>
+                </tr>
+                <tr>
+                        <td class="table4_black_cell noborder" rowspan="2" ></td>
+                        <td class="table4_black_cell noborder"></td>
+                         <td class="table4_green1_cell noborder"  colspan="5"></td>
+                        <td class="table4_black_cell noborder"></td>
+                        <td class="table4_black_cell noborder" rowspan="2" ></td>
+                </tr>
+                <tr>
+                         <td class="table4_green2_cell noborder"  colspan="7"></td>
+                </tr>
+                <tr>
+                        <td class="table4_green3_cell noborder"  colspan="9"></td>
+                </tr>
+                <tr>
+                        <td class="table4_green1_cell noborder"  colspan="11"></td>
+                </tr>
+                <tr>
+                        <td class="table4_black_cell noborder" rowspan="5" colspan="4" ></td>
+                        <td class="table4_brown_cell noborder" ></td>
+                        <td class="table4_orange_cell noborder" ></td>
+                        <td class="table4_brown_cell noborder" ></td>
+                        <td class="table4_black_cell noborder" rowspan="5" colspan="4" ></td>
+                </tr>
+                <tr>
+                        <td class="table4_brown_cell noborder" ></td>
+                        <td class="table4_orange_cell noborder" ></td>
+                        <td class="table4_brown_cell noborder" ></td>
+                           
+                </tr>
+                <tr>
+                        <td class="table4_brown_cell noborder" ></td>
+                        <td class="table4_orange_cell noborder" ></td>
+                        <td class="table4_brown_cell noborder" ></td>
+                                   
+                        </tr>
+                <tr>
+                        <td class="table4_brown_cell noborder" ></td>
+                        <td class="table4_orange_cell noborder" ></td>
+                        <td class="table4_brown_cell noborder" ></td>
+                                           
+                </tr>
+                <tr>
+                        <td class="table4_brown_cell noborder" ></td>
+                        <td class="table4_orange_cell noborder" ></td>
+                        <td class="table4_brown_cell noborder" ></td>
+                                                  
+                </tr>
+                                        
+                                               
+
+  
+</table>
+
+</body>
+</html>
