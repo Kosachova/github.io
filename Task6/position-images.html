@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
     <meta charset="utf-8">
+    <style>
+    .advertising{
+        width: 160px;
+        background-color: yellow;
+        padding: 10px 20px; 
+        position:fixed;
+        left:calc(100% - 200px);
+        top:50px;
+        color:blue;
+        font-family: 'Roboto', sans-serif;
+        font-weight:500;
+    }
+ </style>
 </head>
 <body>
     <h1> What is Lorem Ipsum?</h1>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+    <p><a name="top">LoremIpsum</a> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
     been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took
     a galley of type and scrambled it to make a type specimen book. It has survived not only five
     centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
@@ -22,7 +36,7 @@
     accident, sometimes on purpose (injected humour and the like).</p>
     
    <h2>Where does it come from?</h2>
-    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+    <p>Contrary  to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
     classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
     professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
     words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in
@@ -46,5 +60,17 @@
     with a handful of model sentence structures, to generate Lorem Ipsum which looks
     reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected
     humour, or non-characteristic words etc.</p>
+    <div class="advertising">
+        Здесь могла <br>
+        быть Ваша <br>
+        реклама!!!</div>
+    <div style="position:relative; height: 423px; margin-bottom: 120px">
+    <img src="https://github.com/Kosachova/github.io/blob/master/Task6/no-smoking.png?raw=true" style="position: absolute; top:calc(50% - 128px); left:calc(50% - 128px); z-index: 2">
+    <img src="https://github.com/Kosachova/github.io/blob/master/Task6/biohazard.png?raw=true" style="position: absolute; top:calc(50% - 200px); left:calc(50% - 200px)">
+    <img src="https://github.com/Kosachova/github.io/blob/master/Task6/man-and-woman.png?raw=true" style="position: absolute; top:calc(50% - 200px); left:50%">
+    <img src="https://github.com/Kosachova/github.io/blob/master/Task6/yin-yang.png?raw=true" style="position: absolute; top:50%; left:calc(50% - 100px)">
+    </div>
+   <a href="#top" style="display:inline-block; position: fixed; left:calc(50% - 20px); bottom: 20px; z-index: 3" ><img src="https://github.com/Kosachova/github.io/blob/master/Task6/to-top.png?raw=true" ></a>
+
 </body>
 </html>
